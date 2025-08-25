@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Read(/c:\\Users\\fmhen\\Downloads/**)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm i:*)",
+      "Bash(vercel:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
