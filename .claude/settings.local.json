@@ -8,7 +8,10 @@
       "Bash(npm run build:*)",
       "Bash(npm i:*)",
       "Bash(vercel:*)",
-      "Read(/C:\\Users\\fmhen\\Downloads/**)"
+      "Read(/C:\\Users\\fmhen\\Downloads/**)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
