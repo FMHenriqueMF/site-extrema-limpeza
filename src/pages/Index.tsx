@@ -18,7 +18,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/8c9d869d-118c-43fc-919c-32bae28cd951.png" 
+                src="/LogoExtrema.jpg" 
                 alt="Extrema Limpeza - Higienização de Estofados" 
                 className="h-12 w-auto"
               />
