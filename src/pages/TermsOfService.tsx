@@ -221,6 +221,48 @@ export default function TermsOfService() {
               </CardContent>
             </Card>
 
+            {/* Compatibilidade de Materiais */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <AlertTriangle className="w-6 h-6 text-amber-500" />
+                  Compatibilidade de Materiais e Limitações
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
+                    <h4 className="font-semibold mb-3 text-amber-800">⚠️ Estruturas Sensíveis à Água</h4>
+                    <p className="text-amber-700 text-sm mb-3">
+                      O procedimento envolve uso de água. Estruturas feitas dos seguintes materiais podem não ser compatíveis:
+                    </p>
+                    <ul className="space-y-1 text-amber-700 text-sm">
+                      <li>• <strong>Madeira maciça não tratada</strong> - pode inchar ou deformar</li>
+                      <li>• <strong>MDF (Medium Density Fiberboard)</strong> - sensível à umidade</li>
+                      <li>• <strong>Aglomerado</strong> - pode perder integridade com água</li>
+                    </ul>
+                    <p className="text-amber-800 font-medium mt-3 text-sm">
+                      <strong>Importante:</strong> Se houver danos devido à incompatibilidade do material com água, 
+                      não nos responsabilizamos pela garantia.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Sobre Remoção de Manchas</h4>
+                    <p className="text-muted-foreground text-sm">
+                      <strong>Não garantimos remoção de 100% das manchas ou mofo</strong>, pois isso depende:
+                    </p>
+                    <ul className="space-y-1 text-muted-foreground text-sm mt-2">
+                      <li>• Item causador da mancha</li>
+                      <li>• Tempo de atuação sobre o estofado</li>
+                      <li>• Estado da fibra do tecido (pode estar tingida ou pigmentada)</li>
+                      <li>• A mancha pode permanecer ou apenas amenizar</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Isenções e Limitações */}
             <Card>
               <CardHeader>
@@ -228,30 +270,42 @@ export default function TermsOfService() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                    <h4 className="font-semibold mb-3 text-gray-800">A Garantia NÃO Cobre:</h4>
-                    <div className="grid md:grid-cols-2 gap-3">
-                      <ul className="space-y-1 text-gray-700 text-sm">
-                        <li>• Uso indevido pelo cliente</li>
-                        <li>• Danos por causas naturais</li>
-                        <li>• Exposição ao sol nas primeiras 24h</li>
-                        <li>• Limpezas amadoras com produtos químicos</li>
-                      </ul>
-                      <ul className="space-y-1 text-gray-700 text-sm">
-                        <li>• Manchas de produtos cremosos/oleosos</li>
-                        <li>• Urina e líquidos quentes</li>
-                        <li>• Problemas em estruturas de MDF/madeira não tratada</li>
-                        <li>• Limpeza de tapetes em geral</li>
-                      </ul>
+                  <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                    <h4 className="font-semibold mb-3 text-red-800">🚫 A Garantia NÃO Cobre:</h4>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <h5 className="font-medium text-red-700 mb-2">Uso Indevido:</h5>
+                        <ul className="space-y-1 text-red-600 text-sm">
+                          <li>• Mau uso pelo cliente ou terceiros após execução</li>
+                          <li>• Limpezas amadoras com produtos químicos</li>
+                          <li>• Uso de produtos caseiros</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-red-700 mb-2">Condições Externas:</h5>
+                        <ul className="space-y-1 text-red-600 text-sm">
+                          <li>• Danos por causas naturais (chuvas, enchentes)</li>
+                          <li>• Exposição ao sol nas primeiras 24h</li>
+                          <li>• Problemas anteriores ou posteriores ao serviço</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-red-700 mb-2">Tipos de Manchas:</h5>
+                        <ul className="space-y-1 text-red-600 text-sm">
+                          <li>• Produtos cremosos, pastosos ou oleosos</li>
+                          <li>• Urina humana ou animal</li>
+                          <li>• Líquidos quentes</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-red-700 mb-2">Outros:</h5>
+                        <ul className="space-y-1 text-red-600 text-sm">
+                          <li>• Limpeza de tapetes em geral</li>
+                          <li>• Conserto/troca de brindes entregues</li>
+                          <li>• Contato com produtos químicos</li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Importante sobre Manchas</h4>
-                    <p className="text-muted-foreground text-sm">
-                      <strong>Não garantimos remoção de 100% das manchas ou mofo</strong>, pois depende do item causador 
-                      e tempo de atuação. Algumas fibras podem estar permanentemente tingidas ou pigmentadas.
-                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -286,21 +340,77 @@ export default function TermsOfService() {
               </CardContent>
             </Card>
 
+            {/* Disposições Gerais */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Disposições Gerais (Cláusula Nona)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="font-semibold mb-2">Extinção do Contrato</h4>
+                      <p className="text-muted-foreground text-sm">
+                        Este contrato será considerado extinto quando:
+                      </p>
+                      <ul className="space-y-1 text-muted-foreground text-sm mt-2">
+                        <li>• Os serviços contratados forem cancelados</li>
+                        <li>• Forem inseridos dados falsos, incompletos ou de terceiros no cadastro</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold mb-2">Separabilidade das Cláusulas</h4>
+                      <p className="text-muted-foreground text-sm">
+                        Caso alguma cláusula seja considerada nula ou ineficaz por qualquer juízo ou tribunal, 
+                        isso não afetará a validade das demais disposições contratuais.
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold mb-2">Tolerância e Direitos</h4>
+                      <p className="text-muted-foreground text-sm">
+                        A tolerância da Extrema Limpeza em relação ao descumprimento de qualquer obrigação 
+                        não será considerada novação ou renúncia a qualquer direito, podendo a empresa exigir 
+                        o fiel cumprimento deste contrato a qualquer tempo.
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold mb-2">Natureza da Relação</h4>
+                      <p className="text-muted-foreground text-sm">
+                        Este contrato não cria entre as partes qualquer tipo de sociedade, agência, associação 
+                        ou outro tipo de relação que não a contratação autônoma aqui referenciada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Foro */}
             <Card>
               <CardHeader>
-                <CardTitle>Foro e Disposições Gerais</CardTitle>
+                <CardTitle>Foro e Aceite (Cláusula Décima)</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <p className="text-muted-foreground">
-                    <strong>Foro eleito:</strong> Comarca de Porto Alegre - RS para dirimir quaisquer questões 
-                    decorrentes deste contrato.
-                  </p>
-                  <p className="text-muted-foreground">
-                    <strong>Validade do aceite eletrônico:</strong> O cliente reconhece a plena validade do 
-                    aceite eletrônico destes termos.
-                  </p>
+                  <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                    <h4 className="font-semibold mb-2 text-blue-800">Jurisdição</h4>
+                    <p className="text-blue-700 text-sm">
+                      <strong>Foro eleito:</strong> Comarca de Porto Alegre - RS para dirimir quaisquer dúvidas, 
+                      questões ou litígios decorrentes deste contrato, renunciando as partes a qualquer outro, 
+                      por mais privilegiado que seja.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold mb-2">Aceite Eletrônico</h4>
+                    <p className="text-muted-foreground text-sm">
+                      O cliente aceita eletronicamente o presente contrato, reconhecendo a plena validade do 
+                      aceite eletrônico destes termos de serviço.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>

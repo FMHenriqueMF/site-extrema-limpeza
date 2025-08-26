@@ -7,7 +7,8 @@
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
       "Bash(npm i:*)",
-      "Bash(vercel:*)"
+      "Bash(vercel:*)",
+      "Read(/C:\\Users\\fmhen\\Downloads/**)"
     ],
     "deny": [],
     "ask": []
